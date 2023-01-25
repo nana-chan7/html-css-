@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>提出課題</title>
+    <link rel="stylesheet" href="./questionnaire.css">
+</head>
+<body>
+    <h1><div class="title">アンケート</div></h1>
+    <form action="/example/FormSarvlet" method="get">
+        <p><div class="questionnaire">① あなたのお名前を入力してください。</div></p>
+            <div class="answer"><input type="text" name="name"></div>
+        <p><div class="questionnaire">② 性別を選んでください。</div></p>
+            <div class="answer"><input type="radio" name="gender" value="man">男
+            <input type="radio" name="gender" value="woman">女</div>
+        <p><div class="questionnaire">③ お住まいの地域を選択してください。</div></p>
+        <div class="answer"><select name="live area">
+                <option value="hokkaidou">北海道</option>
+                <option value="touhoku">東北</option>
+                <option value="kantou">関東</option>
+                <option value="kansai">関西</option>
+                <option value="kyusyu">九州</option> 
+            </select></div>
+        <p><div class="questionnaire">④ 興味のあることを選択してください。（複数選択可）</div></p>
+            <div class="answer"><input type="checkbox" name="Interested" value="jogging">ジョギング
+            <input type="checkbox" name="Interested" value="soccer">サッカー
+            <input type="checkbox" name="Interested" value="baseball">野球
+            <input type="checkbox" name="Interested" value="swimming">水泳</div>
+        <p><div class="questionnaire">⑤ 記入が終わりましたら、送信ボタンをおしてください。</div></p>
+        <div class="button2"><button type="submit">送信</button></div>
+    </form>
+</body>
+</html>
